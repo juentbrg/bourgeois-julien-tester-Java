@@ -1,0 +1,5 @@
+/home/julien/workspace/bourgeois-julien-tester-Java/src/test/java/com/parkit/parkingsystem/FareCalculatorServiceTest.java
+/home/julien/workspace/bourgeois-julien-tester-Java/src/test/java/com/parkit/parkingsystem/ParkingServiceTest.java
+/home/julien/workspace/bourgeois-julien-tester-Java/src/test/java/com/parkit/parkingsystem/integration/ParkingDataBaseIT.java
+/home/julien/workspace/bourgeois-julien-tester-Java/src/test/java/com/parkit/parkingsystem/integration/service/DataBasePrepareService.java
+/home/julien/workspace/bourgeois-julien-tester-Java/src/test/java/com/parkit/parkingsystem/integration/config/DataBaseTestConfig.java
