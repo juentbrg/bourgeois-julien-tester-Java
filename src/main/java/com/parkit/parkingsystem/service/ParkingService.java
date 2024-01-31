@@ -46,7 +46,7 @@ public class ParkingService {
                 ticket.setInTime(inTime);
                 ticket.setOutTime(null);
                 ticketDAO.saveTicket(ticket);
-                System.out.println(ticketCount > 1 ? "Welcome back!" : "Welcome");
+                System.out.println(ticketCount > 0 ? "Welcome back!" : "Welcome");
                 System.out.println("Generated Ticket and saved in DB");
                 System.out.println("Please park your vehicle in spot number:"+parkingSpot.getId());
                 System.out.println("Recorded in-time for vehicle number:"+vehicleRegNumber+" is:"+inTime);
@@ -106,7 +106,7 @@ public class ParkingService {
             Date outTime = new Date();
             ticket.setOutTime(outTime);
             int ticketCount = ticketDAO.getNbTicket(vehicleRegNumber);
-            boolean discount = ticketCount > 1;
+            boolean discount = ticketCount > 0;
             fareCalculatorService.calculateFare(ticket, discount);
             if(ticketDAO.updateTicket(ticket)) {
                 ParkingSpot parkingSpot = ticket.getParkingSpot();
