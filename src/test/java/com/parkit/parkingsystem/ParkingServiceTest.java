@@ -34,13 +34,6 @@ public class ParkingServiceTest {
     @Mock
     private static TicketDAO ticketDAO;
 
-    @Captor
-    ArgumentCaptor<ParkingType> parkingTypeCaptor;
-    @Captor
-    ArgumentCaptor<ParkingSpot> parkingSpotCaptor;
-    @Captor
-    ArgumentCaptor<Ticket> ticketCaptor;
-
     @BeforeEach
     public void setUpPerTest() {
         try {
